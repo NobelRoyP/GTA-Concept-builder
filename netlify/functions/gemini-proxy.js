@@ -33,7 +33,7 @@ export async function handler(event) {
 
   // 3. Construct the full URL, including the API key as a query parameter
   // We use the environment variable defined in your Netlify settings
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.API_KEY;
   if (!apiKey) {
     console.error("GEMINI_API_KEY environment variable is not set.");
     return {
